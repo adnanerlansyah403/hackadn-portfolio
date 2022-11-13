@@ -56,16 +56,16 @@ function Layout({ title, children }) {
                     
                     <ul className="navs">
                         <li className="nav-list">
-                            <a href="#home"><span className="span">#</span>home</a>
+                            <Link href="/"><span className="span">#</span>home</Link>
                         </li>
                         <li className="nav-list">
-                            <a href="./projects.html"><span className="span">#</span>works</a>
+                            <Link href="/works"><span className="span">#</span>works</Link>
                         </li>
                         <li className="nav-list">
-                            <a href="./about.html"><span className="span">#</span>about-me</a>
+                            <Link href="/about"><span className="span">#</span>about-me</Link>
                         </li>
                         <li className="nav-list">
-                            <a href="./contracts.html"><span className="span">#</span>contacts</a>
+                            <Link href="/contact"><span className="span">#</span>contacts</Link>
                         </li>
                     </ul>
 
