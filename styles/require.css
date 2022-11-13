@@ -246,6 +246,39 @@ a {
     display: none;
 }
 
+
+.line-social {
+    position: fixed;
+    top: 0;
+    left: 17px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    gap: 8px;
+}
+
+.line-social span {
+    display: block;
+    width: 1px;
+    height: 191px;
+    background-color: #ffffff;
+}
+
+.line-social ul.my-socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.line-social ul.my-socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+
 /* HEADER */
 
 .header {
@@ -324,6 +357,10 @@ a {
 
 
 @media screen and (max-width: 992px) {
+    
+    .line-social {
+        display: none;
+    }
 
     .col-8 {
         width: 100%;

@@ -12,6 +12,29 @@ function Layout({ title, children }) {
         <Head>
             <title>{title ? `Adn Portfolio ${title}` : "Adn Portfolio"}</title>
         </Head>
+
+        
+        <div class="line-social">
+            <span></span>
+            <ul class="my-socialmedia">
+                <li>
+                    <a href="https://discordapp.com/users/DuniaGymeea#0128">
+                        <img src="./assets/images/icons/discord.svg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AdnanErlansyah" target="_blank">
+                        <img src="./assets/images/icons/twitter.svg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/adnanerlansyah403" target="_blank">
+                        <img src="./assets/images/icons/telegram-white.svg" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
         <header className="header">
             <div className="container">
 
