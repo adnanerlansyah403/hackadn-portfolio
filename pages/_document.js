@@ -1,7 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
+import { useEffect } from 'react'
 
 export default function Document() {
+
+
   return (
     <Html>
       <Head />
@@ -9,7 +12,7 @@ export default function Document() {
         <Main />
         <NextScript />
         
-        <script src='./assets/js/main.js' async />
+        {/* <script src='./assets/js/main.js' async /> */}
 
       </body>
     </Html>
