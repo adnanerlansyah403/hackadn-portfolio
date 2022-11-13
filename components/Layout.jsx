@@ -18,17 +18,17 @@ function Layout({ title, children }) {
             <span></span>
             <ul class="my-socialmedia">
                 <li>
-                    <a href="https://discordapp.com/users/DuniaGymeea#0128">
+                    <a href="https://discordapp.com/users/DuniaGymeea#0128" target="_blank" rel="noreferrer">
                         <img src="./assets/images/icons/discord.svg" alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/AdnanErlansyah" target="_blank">
+                    <a href="https://twitter.com/AdnanErlansyah" target="_blank" rel="noreferrer">
                         <img src="./assets/images/icons/twitter.svg" alt="" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://t.me/adnanerlansyah403" target="_blank">
+                    <a href="https://t.me/adnanerlansyah403" target="_blank" rel="noreferrer">
                         <img src="./assets/images/icons/telegram-white.svg" alt="" />
                     </a>
                 </li>
