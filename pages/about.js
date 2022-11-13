@@ -6,18 +6,18 @@ export default function About() {
     <Layout title={`Who am i?`}>
       
             
-      <section classNameName="section about">
-          <div classNameName="container">
+      <section className="section about">
+          <div className="container">
 
-              <h1 classNameName="section-title">
-                  <span classNameName="span">/</span>aboutme
+              <h1 className="section-title">
+                  <span className="span">/</span>aboutme
               </h1>
-              <p classNameName="section-subtitle">
+              <p className="section-subtitle">
                   Who am i?
               </p>
 
-              <div classNameName="content">
-                  <div classNameName="text col-6">
+              <div className="content">
+                  <div className="text col-6">
                       <p>
                           Hello, i&apos;m Adnan E! <br /> <br />
 
@@ -26,7 +26,7 @@ export default function About() {
                           Bisa mengubah website menjadi lebih user-friendly dan juga penuh dengan functionallity yang sering atau akan di gunakan oleh banyak user.
                       </p>
                   </div>
-                  <div classNameName="image col-6">
+                  <div className="image col-6">
                       <img src="./assets/images/my-photo2.png" alt="" />
                   </div>
               </div>
@@ -34,19 +34,19 @@ export default function About() {
           </div>
       </section>
 
-      <section classNameName="section skills">
-          <div classNameName="container">
+      <section className="section skills">
+          <div className="container">
 
-              <h1 classNameName="section-title">
-                  <span classNameName="span">#</span>skills
+              <h1 className="section-title">
+                  <span className="span">#</span>skills
               </h1>
               
                   
-              <div classNameName="card-wrapper">
+              <div className="card-wrapper">
 
-                  <div classNameName="card-list">
-                      <p classNameName="card-subtitle">Tools</p>
-                      <div classNameName="card-details">
+                  <div className="card-list">
+                      <p className="card-subtitle">Tools</p>
+                      <div className="card-details">
                           <ul>
                               <li>
                                   VSCode 
@@ -61,9 +61,9 @@ export default function About() {
                       </div>
                   </div>
                   
-                  <div classNameName="card-list">
-                      <p classNameName="card-subtitle">Languages</p>
-                      <div classNameName="card-details">
+                  <div className="card-list">
+                      <p className="card-subtitle">Languages</p>
+                      <div className="card-details">
                           <ul>
                               <li>
                                   HTML
@@ -81,9 +81,9 @@ export default function About() {
                       </div>
                   </div>
 
-                  <div classNameName="card-list">
-                      <p classNameName="card-subtitle">Databases</p>
-                      <div classNameName="card-details">
+                  <div className="card-list">
+                      <p className="card-subtitle">Databases</p>
+                      <div className="card-details">
                           <ul>
                               <li>
                                   SQLite PostgreSQL
@@ -98,9 +98,9 @@ export default function About() {
                       </div>
                   </div>
 
-                  <div classNameName="card-list">
-                      <p classNameName="card-subtitle">Other</p>
-                      <div classNameName="card-details">
+                  <div className="card-list">
+                      <p className="card-subtitle">Other</p>
+                      <div className="card-details">
                           <ul>
                               <li>
                                   EJS
@@ -117,16 +117,16 @@ export default function About() {
           </div>
       </section>
       
-      <section classNameName="section favorite" style={{ paddingBottom: "148px" }}>
-          <div classNameName="container">
+      <section className="section favorite" style={{ paddingBottom: "148px" }}>
+          <div className="container">
 
-              <h1 classNameName="section-title">
-                  <span classNameName="span">#</span>my-fun-facts
+              <h1 className="section-title">
+                  <span className="span">#</span>my-fun-facts
               </h1>
 
-              <div classNameName="content" style={{ marginBottom: "24px" }}>
+              <div className="content" style={{ marginBottom: "24px" }}>
 
-                  <div classNameName="list col-8">
+                  <div className="list col-8">
                       <ul>
                           <li>
                               <p>I like winter more than summer</p>
@@ -138,7 +138,7 @@ export default function About() {
                               <p>I like coding</p>
                           </li>
                           <li>
-                              <p>I like <span classNameName="white">noodles</span> and <span classNameName="white">pecel</span></p>
+                              <p>I like <span className="white">noodles</span> and <span className="white">pecel</span></p>
                           </li>
                           <li>
                               <p>I was in Bekasi, Indonesian</p>
@@ -152,7 +152,7 @@ export default function About() {
                       </ul>
                   </div>
 
-                  <div classNameName="image">
+                  <div className="image">
                       <img src="./assets/images/icons/groupdl.svg" alt="" />
                   </div>
 
