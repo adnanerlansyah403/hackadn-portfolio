@@ -1,0 +1,306 @@
+
+
+
+/* HERO */
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero .container .content {
+  flex: .98;
+}
+
+.hero .container .content h1 {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.hero .container .content p {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ABB2BF;
+  margin-block: 32px;
+}
+
+.hero .container .img figure {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .container .img figure .badge {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 98%;
+  border: 1px solid #ffffff;
+  color: #fff;
+  padding: 8px;
+  width: 100%;
+  gap: 10px;
+}
+
+/* GREETING */
+
+.greeting .container {
+  justify-content: center;
+}
+
+.greeting .container .content {
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.greeting .container .content h2 {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+  border: 1px solid #fff;
+  padding: 32px;
+}
+
+.greeting .container .content h2::before {
+  /* content: url("../images/icons/quote-left.svg"); */
+  position: absolute;
+  background-color: var(--fc-black);
+  width: 25px;
+  height: 20px;
+  top: -14px;
+  left: 20px;
+}
+
+.greeting .container .content h2::after {
+  /* content: url("../images/icons/quote-right.svg"); */
+  position: absolute;
+  background-color: var(--fc-black);
+  width: 25px;
+  height: 20px;
+  top: 48%;
+  right: 30px;
+}
+
+.greeting .container .content h3 {
+  font-family: 'Fira Code';
+  align-self: flex-end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 16px;
+  width: max-content;
+}
+
+
+/* PROJECTS */
+
+.project .container .section-title h1 {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.project .container .section-fullinfo a {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.project .container .content {
+  margin-top: 48px;
+}
+
+/* SKILLS */
+
+.skills .container {
+  width: 100%;
+}
+
+.skills .container .content .hero {
+  padding: 12px;
+  padding-left: 24px;
+}
+
+.skills .container .content {
+  display: flex;
+}
+
+.skills .container .lists {
+  display: flex;
+  /* align-items: center; */
+  align-content: center;
+  justify-content: flex-end;
+  margin-top: 49px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skills .container .lists .item {
+  border: 1px solid var(--fc-gray);
+  height: max-content;
+}
+
+.skills .container .lists .item h4 {
+  padding: 8px;
+  border: 1px solid var(--fc-gray);
+  border-top: none;
+  border-inline: none;
+}
+
+.skills .container .lists .item ul {
+  padding: 8px;
+  align-self: center;
+}
+
+
+/* ABOUTME */
+
+.aboutme .container {
+  width: 100%;
+  position: relative;
+}
+
+.aboutme .container .content {
+  margin-top: 48px;
+  display: flex;
+}
+
+.aboutme .container .content .details {
+  flex: .55;
+  position: relative;
+}
+
+.aboutme .container .content .details p {
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.aboutme .container .content .details::after {
+  /* content: url("./assets/images/my-photo2.png"); */
+  position: absolute;
+  top: -100px;
+  left: 120%;
+}
+
+
+/* CONTACTS */
+
+.contacts {
+  padding-top: 120px;
+}
+
+
+.contacts .content {
+  margin-top: 45px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.contacts .content .text {
+  flex: .6;
+  text-align: left;
+}
+
+.contacts .content .socials {
+  align-self: flex-end;
+  border: 1px solid #fff;
+  padding: 16px;
+  text-align: left;
+}
+
+.contacts .content .socials ul {
+  margin-top: 16px;
+}
+
+.contacts .content .socials ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .hero .container .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .skills .container .hero {
+      display: none;
+  }
+  
+  .aboutme .container .content {
+      flex-direction: column;
+  }
+
+  .contacts .content {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: flex-start;
+      gap: 24px;
+  }
+
+  .contacts .content .socials {
+      align-self: flex-start;
+  }
+
+  .logo p {
+      display: none;
+  }
+  
+  .socials {
+      font-size: 15px;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

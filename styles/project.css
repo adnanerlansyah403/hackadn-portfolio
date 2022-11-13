@@ -1,0 +1,11 @@
+.section-title::after {
+    display: none;
+}
+
+.allproject .container .section-title {
+    padding-bottom: 48px;
+}
+
+.card-wrapper {
+    padding-bottom: 60px;
+}

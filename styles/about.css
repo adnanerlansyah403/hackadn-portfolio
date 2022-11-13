@@ -1,0 +1,57 @@
+.section-title::after {
+    display: none;
+}
+
+.card-wrapper {
+    align-items: flex-start;
+}
+
+.favorite .card-details ul li:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+.card-list {
+    flex: 1;
+}
+
+.about .container .content {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+}
+
+.about .container .content .text {
+    padding-top: 104px;
+}
+
+.about .container .content .text p {
+    text-align: left;
+}
+
+.about .container .content .image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills .card-wrapper {
+    margin-top: 48px;
+}
+
+.favorite .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.favorite .container .content ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.favorite .container .content ul li {
+    padding: 8px;
+    border: 1px solid #ffffff;
+}
