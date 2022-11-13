@@ -88,4 +88,8 @@
         align-self: flex-start !important;
     }
 
+    .contacts .content .socials {
+        align-self: flex-start !important;
+    }
+
 }
