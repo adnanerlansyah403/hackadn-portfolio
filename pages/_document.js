@@ -9,7 +9,7 @@ export default function Document() {
         <Main />
         <NextScript />
         
-        <script src='./assets/js/main.js' />
+        <script src='./assets/js/main.js' async />
 
       </body>
     </Html>
