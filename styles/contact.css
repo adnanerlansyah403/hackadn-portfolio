@@ -85,7 +85,7 @@
     }
     
     .contacts .container .content .wrapper .socials { 
-        align-self: flex-start;
+        align-self: flex-start !important;
     }
 
 }
