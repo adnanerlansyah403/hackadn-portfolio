@@ -68,6 +68,7 @@
 }
 
 .greeting .container .content h2 {
+  position: relative;
   font-family: 'Fira Code';
   font-style: normal;
   font-weight: 500;
@@ -76,6 +77,24 @@
   color: #FFFFFF;
   border: 1px solid #fff;
   padding: 32px;
+}
+
+.greeting .container .content h2 img.quote-left {
+  position: absolute;
+  background-color: var(--fc-black);
+  width: 25px;
+  height: 20px;
+  top: -14px;
+  left: 20px;
+}
+
+.greeting .container .content h2 img.quote-right {
+  position: absolute;
+  background-color: var(--fc-black);
+  width: 25px;
+  height: 20px;
+  bottom: -10%;
+  right: 30px;
 }
 
 .greeting .container .content h2::before {

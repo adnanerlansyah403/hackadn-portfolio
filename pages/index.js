@@ -38,8 +38,10 @@ export default function Home() {
               <div className="container">
 
                   <div className="content">
-                      <h2 className="text-lg">
+                      <h2 className="text-lg my-quote">
+                          <img src="./assets/images/icons/quote-left.svg" alt="" className="quote-left" />
                           With great power comes great electricity bill
+                          <img src="./assets/images/icons/quote-left.svg" alt="" className="quote-right" />
                       </h2>
                       <h3 className="text-md">
                           - Adn. E

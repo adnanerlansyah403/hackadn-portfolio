@@ -25,7 +25,7 @@ export default function Contact() {
                           <ul>
                               <li>
                                   <img src="./assets/images/icons/discord.svg" alt="" />
-                                  <a href="#">!DunyaGymers23#4432</a>
+                                  <a href="https://discordapp.com/users/DuniaGymeaa#0124">!DunyaGymers23#4432</a>
                               </li>
                           </ul>
                       </div>
@@ -34,11 +34,11 @@ export default function Contact() {
                           <ul>
                               <li>
                                   <img src="./assets/images/icons/discord.svg" alt="" />
-                                  <a href="#">!DunyaGymers23#4432</a>
+                                  <a href="https://discordapp.com/users/DuniaGymeaa#0124">!DuniaGymeaa#0124</a>
                               </li>
                               <li>
                                   <img src="./assets/images/icons/email.svg" alt="" />
-                                  <a href="#">adnanerlansyah403@gmail.com</a>
+                                  <a href="mailto:adnanerlansyah403@gmail.com">adnanerlansyah403@gmail.com</a>
                               </li>
                           </ul>
                       </div>
