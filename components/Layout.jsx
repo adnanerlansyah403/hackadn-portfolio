@@ -10,7 +10,7 @@ function Layout({ title, children }) {
   return (
     <>
         <Head>
-            <title>{title ? `Adn Portfolio ${title}` : "Adn Portfolio"}</title>
+            <title>{title ? `Adn Portfolio | ${title}` : "Adn Portfolio"}</title>
         </Head>
 
         
