@@ -14,9 +14,9 @@ function Layout({ title, children }) {
         </Head>
 
         
-        <div class="line-social">
+        <div className="line-social">
             <span></span>
-            <ul class="my-socialmedia">
+            <ul className="my-socialmedia">
                 <li>
                     <a href="https://discordapp.com/users/DuniaGymeea#0128" target="_blank" rel="noreferrer">
                         <img src="./assets/images/icons/discord.svg" alt="" />
@@ -158,6 +158,11 @@ function Layout({ title, children }) {
             </div>
         </footer>
 
+        {/* JQUERY */}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        {/* ISOTOPE JS */}
+        <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
     </>
   )

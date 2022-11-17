@@ -1,8 +1,9 @@
 import '../styles/index.css'
 import '../styles/require.css'
-import '../styles/project.css'
 import '../styles/about.css'
 import '../styles/contact.css'
+import '../styles/project.css'
+
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 

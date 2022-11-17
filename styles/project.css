@@ -1,11 +1,93 @@
+.allproject .projects .col-4 {
+  width: calc(100% / 3 - 16px) !important;
+  margin: 0 8px;
+}
+
 .section-title::after {
-    display: none;
+  display: none;
 }
 
 .allproject .container .section-title {
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .card-wrapper {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+.card-wrapper .card-list img {
+  max-width: 374px;
+  max-height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: top center;
+}
+
+.card-list .card-subtitle {
+  padding: 8px;
+}
+
+.card-list .card-details {
+  padding: 16px;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+font-family: sans-serif;
+}
+
+/* Button Group */
+.button-group button {
+padding: 8px 16px;
+color: #fff;
+cursor: pointer;
+background-color: transparent;
+border: 1px solid #ffffff;
+transition: .3s ease-in;
+font-weight: bold;
+transition: .2s ease-in-out;
+}
+
+.button-group button.is-checked {
+border-color: var(--fc-primary) !important;
+}
+
+/* clear fix */
+.grid:after {
+content: '';
+display: block;
+clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+position: relative;
+float: left;
+height: auto;
+}
+
+.card-wrapper .card-list:is(:not(:nth-child(1), :nth-child(2), :nth-child(3))) {
+margin-top: 15px;
+}
+
+.element-item > * {
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+
+.projects {
+  width: 100%;
+}
+
+.card-wrapper .card-list {
+  margin-top: 15px !important;
+  margin-inline: 0 !important;
+}
+
+
 }

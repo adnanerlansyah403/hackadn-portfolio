@@ -11,8 +11,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        
-        {/* <script src='./assets/js/main.js' async /> */}
 
       </body>
     </Html>
