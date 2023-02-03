@@ -22,17 +22,17 @@
      ** typography
     */
     --ff-firacode: 'Fira Code', monospace;
-    
+
     /* 
      ** colors
     */
     --fc-primary: #C778DD;
     --fc-gray: #ABB2BF;
     --fc-black: #282C33;
-    
 
 
-    
+
+
 }
 
 /* RESET STYLES */
@@ -45,7 +45,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -57,7 +58,9 @@ li {
     list-style: none;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -85,7 +88,7 @@ a {
 
 /* REUSED STYLES */
 
-.span  {
+.span {
     color: var(--fc-primary);
 }
 
@@ -216,6 +219,8 @@ a {
     flex-wrap: wrap;
     gap: 16px;
 }
+
+/* .card-img img {} */
 
 .card-list {
     /* width: auto;

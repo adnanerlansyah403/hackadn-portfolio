@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 export default function Works() {
 
     useEffect(() => {
-        if(typeof window !== undefined) {
+        if (typeof window !== undefined) {
             // external js: isotope.pkgd.js
             // init Isotope
             var $grid = $('.grid').isotope({
@@ -14,39 +14,39 @@ export default function Works() {
             // filter functions
             var filterFns = {
                 // show if number is greater than 50
-                numberGreaterThan50: function() {
-                var number = $(this).find('.number').text();
-                return parseInt( number, 10 ) > 50;
+                numberGreaterThan50: function () {
+                    var number = $(this).find('.number').text();
+                    return parseInt(number, 10) > 50;
                 },
                 // show if name ends with -ium
-                ium: function() {
-                var name = $(this).find('.name').text();
-                return name.match( /ium$/ );
+                ium: function () {
+                    var name = $(this).find('.name').text();
+                    return name.match(/ium$/);
                 }
             };
             // bind filter button click
-            $('.filters-button-group').on( 'click', 'button', function() {
-                var filterValue = $( this ).attr('data-filter');
+            $('.filters-button-group').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
                 // use filterFn if matches value
-                filterValue = filterFns[ filterValue ] || filterValue;
+                filterValue = filterFns[filterValue] || filterValue;
                 $grid.isotope({ filter: filterValue });
             });
             // change is-checked class on buttons
-            $('.button-group').each( function( i, buttonGroup ) {
-                var $buttonGroup = $( buttonGroup );
-                $buttonGroup.on( 'click', 'button', function() {
-                $buttonGroup.find('.is-checked').removeClass('is-checked');
-                $( this ).addClass('is-checked');
+            $('.button-group').each(function (i, buttonGroup) {
+                var $buttonGroup = $(buttonGroup);
+                $buttonGroup.on('click', 'button', function () {
+                    $buttonGroup.find('.is-checked').removeClass('is-checked');
+                    $(this).addClass('is-checked');
                 });
             });
-            
+
         }
     }, [])
 
-  return (
-    <Layout title={`My Works`}>
+    return (
+        <Layout title={`My Works`}>
 
-            
+
             <section class="section projects">
                 <div class="container">
 
@@ -56,7 +56,7 @@ export default function Works() {
                     <p class="section-subtitle">
                         List of my projects
                     </p>
-                    
+
                 </div>
             </section>
 
@@ -68,7 +68,7 @@ export default function Works() {
                             <span class="span">#</span>complete-apps
                         </h1>
 
-                        <div class="tabs-wrapper filters-button-group">
+                        {/* <div class="tabs-wrapper filters-button-group">
                             <ul class="tabs-list button-group">
                                 <li class="tabs-item">
                                     <button class="btn btn-secondary is-checked" style={{ background: "transparent" }} data-filter="*">All</button>
@@ -86,67 +86,10 @@ export default function Works() {
                                     <button class="btn btn-secondary" style={{ background: "transparent" }} data-filter=".nextjs">NextJS</button>
                                 </li>
                             </ul>
-                        </div>
-                        
+                        </div> */}
+
                         <div class="card-wrapper grid">
 
-                            <div class="card-list element-item col-4 html css js" data-category="transition">
-                                <figure class="card-img">
-                                    <img src="./assets/images/foodfast.png" alt="" class="img-cover" />
-                                </figure>
-                                <p class="card-subtitle">HTML CSS JS</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        FoodFast
-                                    </h1>
-                                    <p class="card-text">
-                                        Website untuk menjual makanan online
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Live &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-list element-item col-4 html css js" data-category="transition">
-                                <figure class="card-img">
-                                    <img src="./assets/images/gamemax.png" alt="" class="img-cover" />
-                                </figure>
-                                <p class="card-subtitle">HTML CSS JS</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        Gamemax
-                                    </h1>
-                                    <p class="card-text">
-                                        Website Gaming Online
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Live &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-list element-item col-4 html css js" data-category="transition">
-                                <figure class="card-img">
-                                    <img src="./assets/images/anonecommerce.png" alt="" class="img-cover" />
-                                </figure>
-                                <p class="card-subtitle">HTML CSS JS</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        Anon Ecommerce
-                                    </h1>
-                                    <p class="card-text">
-                                        Website Kosmetik Online
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Live &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="card-list element-item col-4 html css" data-category="transition">
                                 <figure class="card-img">
                                     <img src="./assets/images/resultrondovision.png" alt="" class="img-cover" />
@@ -185,7 +128,7 @@ export default function Works() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-list element-item col-4 html css nextjs" data-category="transition">
+                            {/* <div class="card-list element-item col-4 html css nextjs" data-category="transition">
                                 <figure class="card-img">
                                     <img src="./assets/images/simpleecommerce.png" alt="" class="img-cover" />
                                 </figure>
@@ -203,18 +146,18 @@ export default function Works() {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
-                        
+
                     </div>
 
                     <div style={{ paddingTop: "81px" }}>
                         <h1 class="section-title">
                             <span class="span">#</span>small-apps
                         </h1>
-                        
+
                         <div class="card-wrapper">
-    
+
                             <div class="card-list col-4">
                                 <p class="card-subtitle">HTML CSS REACTJS GRAPHSQL</p>
                                 <div class="card-details">
@@ -228,13 +171,13 @@ export default function Works() {
                                         <a href="https://graphcmsblog-seven.vercel.app" class="btn btn-primary">
                                             Live &lt;~&gt;
                                         </a>
-                                        <a href="#" class="btn btn-secondary">
+                                        {/* <a href="#" class="btn btn-secondary">
                                             Cached &gt;=
-                                        </a> 
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="card-list col-4">
                                 <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
@@ -251,8 +194,8 @@ export default function Works() {
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="card-list col-4">
+
+                            {/* <div class="card-list col-4">
                                 <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
@@ -267,8 +210,8 @@ export default function Works() {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-    
+                            </div> */}
+
                             <div class="card-list col-4">
                                 <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
@@ -285,7 +228,7 @@ export default function Works() {
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="card-list col-4">
                                 <p class="card-subtitle">HTML CSS NEXTJS</p>
                                 <div class="card-details">
@@ -308,7 +251,7 @@ export default function Works() {
 
                 </div>
             </section>
-      
-    </Layout>
-  )
+
+        </Layout>
+    )
 }
